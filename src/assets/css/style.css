@@ -1,0 +1,49 @@
+body,
+.ff-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.ff-oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Hero Carousel */
+.hero-carousel__item {
+    background-image: linear-gradient(#88d29a 1.5px, transparent 1.5px), linear-gradient(to right, #88d29a 1.5px, transparent 1.5px);
+    background-size: 20px 20px;
+    background-color: #e4e4e4;
+}
+
+.hero-carousel__item--img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    margin: 1rem 0;
+}
+
+#hero-carousel>.carousel-control-prev,
+#hero-carousel>.carousel-control-next {
+    opacity: 0;
+}
+
+#hero-carousel:hover>.carousel-control-prev,
+#hero-carousel:hover>.carousel-control-next {
+    opacity: 0.75;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: var(--bs-dark);
+    width: unset;
+    padding: 1rem;
+    top: 50%;
+    bottom: unset;
+    transform: translateY(-50%);
+}

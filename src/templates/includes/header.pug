@@ -1,0 +1,84 @@
+//- Header Banner
+header.bg-white.py-3
+    .header__banner
+        .container
+            .row.align-items-center
+                .col-lg-6
+                    .d-flex.align-items-center
+                        img.me-3(src="https://avionics18.github.io/aecsnwp/images/aecs_logol.png", alt="Atomic Energy Central School Narwapahar Logo", width="80")
+                        div
+                            h1.h4.text-uppercase.fw-bold.m-0 Atomic Energy Central School
+                            h1.h1.text-primary.text-uppercase.fw-bold.m-0 Narwapahar
+                .col-lg-6
+                    .hstack.justify-content-end.gap-3
+                        a.link-primary.ff-oswald.fw-bold(href="#") Staff
+                        .vr
+                        a.link-primary.ff-oswald.fw-bold(href="#") Alumni
+                        .vr
+                        a.link-primary.ff-oswald.fw-bold(href="#") Parents
+                        .vr
+                        a.btn.btn-primary(href="#") Admissions Online
+
+//- Main Navbar
+nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme="dark")
+    .container
+        span.navbar-brand.fw-bold.text-secondary.d-lg-none MENU
+        button.navbar-toggler(
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        )
+            | #[i.fa.fa-bars]
+        #navbarContent.collapse.navbar-collapse
+            ul.navbar-nav.me-auto.mb-2.mb-lg-0
+                li.nav-item
+                    a.nav-link(href="/") Home
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                        | About Us
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Our History
+                        li
+                            a.dropdown-item(href="#") Principal's Message
+                        li
+                            a.dropdown-item(href="#") Our Mission &amp; Vision
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                        | Academics
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Link 1
+                        li
+                            a.dropdown-item(href="#") Link 2
+                        li
+                            a.dropdown-item(href="#") Link 3
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                        | Facilities
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Link 1
+                        li
+                            a.dropdown-item(href="#") Link 2
+                        li
+                            a.dropdown-item(href="#") Link 3
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                        | Students Corner
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Link 1
+                        li
+                            a.dropdown-item(href="#") Link 2
+                        li
+                            a.dropdown-item(href="#") Link 3
+                li.nav-item
+                    a.nav-link(href="#") New &amp; Events
+                li.nav-item
+                    a.nav-link(href="#") Gallery
+                li.nav-item
+                    a.nav-link(href="#") Contact Us

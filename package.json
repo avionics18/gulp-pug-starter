@@ -1,0 +1,23 @@
+{
+  "name": "gulp-pug-starter",
+  "version": "1.0.0",
+  "description": "Just a basic starter html website using PUG templating language.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp --development",
+    "build": "gulp --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "cssnano": "^6.0.2",
+    "gulp": "^4.0.2",
+    "gulp-mode": "^1.1.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "pug": "^3.0.2"
+  }
+}

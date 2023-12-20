@@ -1,0 +1,109 @@
+//- Inherit the BASE layout file: templates/base.pug
+extends templates/base.pug
+
+block page__vars
+    - const pageTitle = "Home"
+    - const pageDesc = "Welcome to the homepage of Atomic Energy Central School, Narwapahar."
+
+block content
+    //- Carousel
+    #hero-carousel.carousel.slide(data-bs-interval='false')
+        //- Indicators/dots
+        .carousel-indicators
+            button.active(type='button' data-bs-target='#hero-carousel' data-bs-slide-to='0')
+            button(type='button' data-bs-target='#hero-carousel' data-bs-slide-to='1')
+            button(type='button' data-bs-target='#hero-carousel' data-bs-slide-to='2')
+        //- The slideshow/carousel
+        .carousel-inner
+            .carousel-item.active
+                //- Hero Carousel ITEM
+                .hero-carousel__item
+                    .container-fluid
+                        .row.align-items-center
+                            .col-lg-7
+                                img.img-fluid.shadow-lg.hero-carousel__item--img(src='https://images.unsplash.com/photo-1511629091441-ee46146481b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='Teacher')
+                            .col-lg-5
+                                div.bg-light.bg-opacity-75.p-3.border-top.border-primary.border-5.rounded-bottom
+                                    h3.h1.mb-4 Pedagogy To #[i Excel]
+                                    p.lead Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tenetur maiores, voluptatum quas expedita consectetur numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    p.m-0
+                                        a.btn.btn-sm.btn-outline-dark(href="#") Read More &rarr;
+            .carousel-item
+                //- Hero Carousel ITEM
+                .hero-carousel__item
+                    .container-fluid
+                        .row.align-items-center
+                            .col-lg-7
+                                img.img-fluid.shadow-lg.hero-carousel__item--img(src='https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='Students')
+                            .col-lg-5
+                                div.bg-light.bg-opacity-75.p-3.border-top.border-primary.border-5.rounded-bottom
+                                    h3.h1.mb-4 Pedagogy To #[i Excel]
+                                    p.lead Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tenetur maiores, voluptatum quas expedita consectetur numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    p.m-0
+                                        a.btn.btn-sm.btn-outline-dark(href="#") Read More &rarr;
+            .carousel-item
+                //- Hero Carousel ITEM
+                .hero-carousel__item
+                    .container-fluid
+                        .row.align-items-center
+                            .col-lg-7
+                                img.img-fluid.shadow-lg.hero-carousel__item--img(src='https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' alt='Sports')
+                            .col-lg-5
+                                div.bg-light.bg-opacity-75.p-3.border-top.border-primary.border-5.rounded-bottom
+                                    h3.h1.mb-4 Pedagogy To #[i Excel]
+                                    p.lead Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi tenetur maiores, voluptatum quas expedita consectetur numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    p.m-0
+                                        a.btn.btn-sm.btn-outline-dark(href="#") Read More &rarr;
+        //- Left and right controls/icons
+        button.carousel-control-prev(type='button' data-bs-target='#hero-carousel' data-bs-slide='prev')
+            span.carousel-control-prev-icon
+        button.carousel-control-next(type='button' data-bs-target='#hero-carousel' data-bs-slide='next')
+            span.carousel-control-next-icon
+
+    main.my-5
+        .container
+            .row
+                .col-lg-7
+                    div.d-flex.flex-column.gap-5
+                        div.bg-white.p-4.shadow-sm
+                            h2.display-5 Welcome to AECS, Narwapahar
+                            hr
+                            p.
+                                Atomic Energy Central School, Narwapahar, is situated in the District Singhbum(E) of Jharkhand State in the campus of Uranium Corporation of India Limited (UCIL) township popularly known as UCIL Colony, Narwapahar. It is well planned, Central Government, English Medium School affiliated to CBSE. It is situated at a distance of 12 kms west from the district headquarters Jamshedpur. Since its inception in 1990, this School has been a role model for the other institutions in the District as it has produced excellent results and has earned appreciation for the activities other than academics as well.
+                        div.bg-white.p-4.shadow-sm
+                            h2.display-5 Our Acheivers'23
+                            hr
+                            p.
+                                Atomic Energy Education Society (AEES), an Autonomous Body, under the Department of Atomic Energy, Govt. of India, provides education for wards of the DAE employees upto junior college level. Atomic Energy Central Schools and Junior Colleges are spread all over the country and are affiliated to CBSE and other State Boards. AEES has 30 Schools/Junior colleges at sixteen different centres with 28000 students and 1547 teaching and 300 non-teaching staff. AEES has achieved significant results in its pursuit of excellence in academic as well as non-academic fields. The enrichment of the school libraries, computer aided education, improved sports facilities, multi play equipment, introduction of adventure sports, in-service training programmes for teachers, better multi media programmes and enrichment programmes for students have helped the institution to set new benchmark in excellence.
+                        div.bg-white.p-4.shadow-sm
+                            h2.display-5 About AEES
+                            hr
+                            p.
+                                Atomic Energy Education Society (AEES), an Autonomous Body, under the Department of Atomic Energy, Govt. of India, provides education for wards of the DAE employees upto junior college level. Atomic Energy Central Schools and Junior Colleges are spread all over the country and are affiliated to CBSE and other State Boards. AEES has 30 Schools/Junior colleges at sixteen different centres with 28000 students and 1547 teaching and 300 non-teaching staff. AEES has achieved significant results in its pursuit of excellence in academic as well as non-academic fields. The enrichment of the school libraries, computer aided education, improved sports facilities, multi play equipment, introduction of adventure sports, in-service training programmes for teachers, better multi media programmes and enrichment programmes for students have helped the institution to set new benchmark in excellence.
+                .col-lg-5
+                    div.bg-white.p-4.shadow-sm
+                        //- Nav tabs
+                        ul.nav.nav-pills
+                            li.nav-item
+                                a.nav-link.active(data-bs-toggle='tab' href='#notice-tab') Notice
+                            li.nav-item
+                                a.nav-link(data-bs-toggle='tab' href='#tenders-tab') Tenders
+                            li.nav-item
+                                a.nav-link(data-bs-toggle='tab' href='#misc-tab') Misc
+                        //- Tab panes
+                        .tab-content.py-3
+                            #notice-tab.tab-pane.active
+                                .card.border.rounded-0
+                                    .card-body
+                                        p.lead Notice Content
+                                        p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sit.
+                            #tenders-tab.tab-pane.fade
+                                .card.border.rounded-0
+                                    .card-body
+                                        p.lead Tenders Content
+                                        p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sit.
+                            #misc-tab.tab-pane.fade
+                                .card.border.rounded-0
+                                    .card-body
+                                        p.lead Misc Content
+                                        p.card-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, sit.
