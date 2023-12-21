@@ -1,0 +1,26 @@
+//- Inherit the BASE layout file: _templates/base.pug
+extends /_templates/base.pug
+
+block page__vars
+    - const pageTitle = "Principal's Message"
+    - const pageDesc = "A message from the Principal to all the students, staff and parents associated with AECS Narwapahar"
+
+block content
+    main.my-5
+        .container
+            .row
+                .col-lg-8
+                    div.bg-white.p-4.shadow-sm
+                        h2.display-5 From the Principal's Desk
+                        hr
+                        p.
+                            Education in AECS Narwapahar is a blend of cultural heritage and scientific advancement with emphasis on an excellent grooming of young minds. We aim at nurturing their creativity and spirit of enquiry while encouraging them to think,  understand , observe, experiment and to know themselves for an all round development. This would enable them to become worthy children of their parents and motherland, responsible citizens of society and above all noble human beings of impeccable character who could contribute to society and nation building. Every child is endowed with various qualities and talents. Implementation of Continuous  Comprehensive Evaluation (CCE) has heralded a new era in the field of education of children which offers them opportunities to bring out their inherent qualities by taking part in diverse activities conducted by school in a congenial and stress free environment.
+                        p.
+                            The CCE is indeed a very effective tool and is helping us in achieving our objective. It is our firm belief that with the cooperation of parents and hard work of our diligent students and teachers, the students will pass out from the portals of our institution with flying colours and meet the expectations of their parents, society as well as nation.
+                        br
+                        p
+                            span.h5.fw-bold.font-monospace.text-primary Mr.GUNVANT V. KHOBRAGADE
+                            br
+                            span.font-monospace Principal, AECS Narwapahar
+                .col-lg-4
+                    include /_templates/includes/sidebar.pug 

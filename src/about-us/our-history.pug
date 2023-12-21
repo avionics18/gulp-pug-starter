@@ -1,5 +1,5 @@
-//- Inherit the BASE layout file: templates/base.pug
-extends /templates/base.pug
+//- Inherit the BASE layout file: _templates/base.pug
+extends /_templates/base.pug
 
 block page__vars
     - const pageTitle = "Our History"
@@ -13,15 +13,23 @@ block content
                     div.bg-white.p-4.shadow-sm
                         h2.display-5 Our History
                         hr
-                        p
-                            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ullam neque hic perspiciatis, veniam labore expedita, sequi dolorem impedit dolorum, mollitia laudantium dolor. Molestiae, laborum autem ipsa eaque dolores numquam.
+                        p.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum ullam neque hic perspiciatis, veniam labore expedita, sequi dolorem impedit dolorum, mollitia laudantium dolor. Molestiae, laborum autem ipsa eaque dolores numquam.
                         br
                         h2.display-5 Governing Body of AEES
                         hr
-                        p
-                            | The administrative set up of the society consists of a Governing Council with a Chairman, Secretary, Treasurer and twelve other members who manage the affairs of the AEES. The Chairman, AEES is also the Chairman of the Governing Council. The Governing Council assists the Chairman in formulating the policies and programmes of the society.
-
-                            | At the administrative level, the AEES has a network of principals, vice-principals and headmasters/headmistresses who are responsible for the smooth functioning of all the schools. To coordinate their activities, integrate their ideas and plan ahead, conferences of the principals and HMs are organized every year.
-
-                            | The complementary skills of every employee and multi-faceted talents of every student of the AEES will go a long way in realizing its dreams of excellence. As the saying goes, excellence is a moving target; and AEES is constantly raising the bar. At the same time, it pledges to build its success on a strong foundation of values.
-                .col-lg-4 
+                        p.
+                            The administrative set up of the society consists of a Governing Council with a Chairman, Secretary, Treasurer and twelve other members who manage the affairs of the AEES. The Chairman, AEES is also the Chairman of the Governing Council. The Governing Council assists the Chairman in formulating the policies and programmes of the society.
+                        p.
+                            At the administrative level, the AEES has a network of principals, vice-principals and headmasters/headmistresses who are responsible for the smooth functioning of all the schools. To coordinate their activities, integrate their ideas and plan ahead, conferences of the principals and HMs are organized every year.
+                        p.
+                            The complementary skills of every employee and multi-faceted talents of every student of the AEES will go a long way in realizing its dreams of excellence. As the saying goes, excellence is a moving target; and AEES is constantly raising the bar. At the same time, it pledges to build its success on a strong foundation of values.
+                        br
+                        h2.display-5 Atomic Energy Central School, Narwapahar
+                        hr
+                        p.
+                            Away from the hustle and bustle of the modern city life and the objectivity of the urban lifstyle Atomic Energy Central School, Narwapahar, is situated in the District Singhbum(E) of Jharkhand State in the campus of Uranium Corporation of India Limited (UCIL) township popularly known as UCIL Colony, Narwapahar. It is situated at a distance of 12 kms west from the district headquarters Jamshedpur. It is around 80 kms away from the State capital, Ranchi. The natural surrounding is full of lush green forests offering a pleasant climate. School campus itself is full of green trees, shrubs and flowers. This city Jamshedpur is famous for Tata Industries which tends to know Jamshedpur as the Iron &amp; Steel City. This Vidyalaya is constructed with a heart touching look and feel which adds to the beauty of the colony of UCIL, Narwapahar. The atmosphere as a whole is quite serene and conducive to the teaching and learning process. Since its inception in 1990, this School has been a role model for the other institutions in the District as it has produced excellent results and has earned appreciation for the activities other than academics as well. The Academic wing of the School is functioning under the wise guidance of Principal and the concerned In-charges with a view to achieve Academic Excellence. It comprises of all Subject departments, Science labs, Computer lab equipped with Latest technology, Music and Art room, Integrated Computer Technology room and a well equipped Library to facilitate the students as well as staff to achieve the proposed target. The School also takes pride in its team of qualified &amp; experienced Teachers who through their sincere and dedicated efforts have brought this School to the reputation it holds at present. Atomic Energy Central School, Narwapahar is situated in the campus of the Uranium Corporation of India Limited (UCIL), Narwapahar. It is well planned, Central Government, English Medium School affiliated to CBSE. The natural surrounding is full of lush green forest and hills. Organizations of International repute like Metal Industries (Steel, Iron), Uranium Corporation of India Limted (UCIL) are the pride of the Jamshedpur city.
+                        p.
+                            The school has well equipped Physics, Chemistry, Biology, Computer and Maths Laboratories. It also has a well equipped library with above 10,000 books in various categories. The school adopts a physical education programme designed by AEES which eventually trains the students in various sporting activities. In order to enhance the spirit of healthy competition and tap the latent talent among students, innovative Co-Curricular activities are conducted regularly. The school is smoothly maneuvered by a team of one Principal, one Vice-Principal, one Headmaster, Trained Graduate Teachers, Primary teachers, Preparatory teachers, one Librarian, one Lab attendant, two Office staff members and three Group-D staff. The academic session starts in April every year and ends on the 31st of March of the following year. The medium of instruction is English.
+                .col-lg-4
+                    include /_templates/includes/sidebar.pug 

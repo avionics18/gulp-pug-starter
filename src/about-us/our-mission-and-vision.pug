@@ -1,0 +1,27 @@
+//- Inherit the BASE layout file: _templates/base.pug
+extends /_templates/base.pug
+
+block page__vars
+    - const pageTitle = "Our Mission and Vision"
+    - const pageDesc = "The Mission and Vision of our school"
+
+block content
+    main.my-5
+        .container
+            .row
+                .col-lg-8
+                    div.bg-white.p-4.shadow-sm
+                        p.text-center
+                            img.img-fluid.border.border-5.border-dark(width="250", alt="Homi J. Bhabha", src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Homi_Jehangir_Bhabha_1960s.jpg/640px-Homi_Jehangir_Bhabha_1960s.jpg")
+                        br
+                        h2.display-5 Our Mission
+                        hr
+                        p.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi modi fugit eos suscipit nemo, quia exercitationem consectetur unde, neque alias tempora maiores consequatur debitis impedit labore? Id in cumque eos deserunt reprehenderit earum quo numquam. Voluptatibus dolorem repudiandae, est labore id sequi, inventore sint nesciunt nemo nobis velit quo, harum ullam maxime doloremque consequuntur fuga. Labore quibusdam dicta harum deserunt explicabo repellat aperiam adipisci non architecto quod beatae sed voluptates, nemo perferendis impedit velit temporibus odit. Exercitationem, veniam minus. Tempore.
+                        br
+                        h2.display-5 Our Vision
+                        hr
+                        p.
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias quo non asperiores officia quidem est ad ex quam! Illo rem neque illum, consequatur dignissimos, iure reiciendis perferendis magni molestiae doloribus modi earum explicabo vitae blanditiis eum voluptas. At optio ex, ducimus, sit exercitationem necessitatibus repellendus autem numquam doloremque ipsum culpa cum delectus omnis porro voluptatem laudantium dicta reiciendis quam quis doloribus, iste id commodi? Delectus maxime harum repellat earum fugit voluptatum numquam cum, quis ex accusantium exercitationem distinctio aliquid necessitatibus.
+                .col-lg-4
+                    include /_templates/includes/sidebar.pug 

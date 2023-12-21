@@ -27,10 +27,16 @@ function buildCSS() {
         .pipe(dest('./docs/assets/css'));
 }
 
+// Favicon Task
+function faviconTask() {
+    return src('./src/assets/images/site-metadata/*')
+        .pipe(dest('./docs/'));
+}
+
 // Images Task
 function imgTask() {
-    return src('./src/assets/images/*.{jpg, jpeg, png, gif, webp}')
-        .pipe(dest('./docs/assets/images'));
+    return src('./src/assets/images/*.{jpg,jpeg,png,gif,webp}')
+        .pipe(dest('./docs/assets/images/'));
 }
 
 // BrowserSync Initialize
@@ -65,4 +71,4 @@ function watchTask() {
 }
 
 
-exports.default = mode.production() ? series(buildCSS, buildHTML, imgTask) : series(buildCSS, buildHTML, imgTask, bsServe, watchTask);
+exports.default = mode.production() ? series(buildCSS, buildHTML, faviconTask, imgTask) : series(buildCSS, buildHTML, faviconTask, imgTask, bsServe, watchTask);

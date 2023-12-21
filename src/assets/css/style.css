@@ -1,3 +1,4 @@
+/* --------- BOOTSTRAP OVERRIDES ----------- */
 body,
 .ff-inter {
     font-family: 'Inter', sans-serif;
@@ -13,6 +14,19 @@ h6,
     font-family: 'Oswald', sans-serif;
 }
 
+.navbar {
+    padding: 0;
+}
+
+/* ----------------------------------------- */
+
+/* Main Navbar */
+.dropdown-menu {
+    border: none;
+    border-bottom: 5px solid var(--bs-primary);
+    border-radius: 0px;
+}
+
 /* Hero Carousel */
 .hero-carousel__item {
     background-image: linear-gradient(#88d29a 1.5px, transparent 1.5px), linear-gradient(to right, #88d29a 1.5px, transparent 1.5px);
@@ -22,7 +36,7 @@ h6,
 
 .hero-carousel__item--img {
     width: 100%;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     object-position: center;
     margin: 1rem 0;

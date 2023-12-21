@@ -1,23 +1,31 @@
 //- Header Banner
-header.bg-white.py-3
-    .header__banner
+header
+    .header__topLinks.bg-primary.py-1
+            .container
+                .row.align-items-center
+                    .col-lg-12
+                        .hstack.justify-content-end.gap-3.bg-primary
+                            a.link-light.small.ff-oswald.text-decoration-none(href="#") Staff
+                            .vr
+                            a.link-light.small.ff-oswald.text-decoration-none(href="#") Alumni
+                            .vr
+                            a.link-light.small.ff-oswald.text-decoration-none(href="#") Parents
+                            .vr
+                            a.link-light.small.ff-oswald.text-decoration-none(href="#") Admission Online
+    .header__banner.bg-white.py-3
         .container
             .row.align-items-center
-                .col-lg-6
-                    .d-flex.align-items-center
-                        img.me-3(src="https://avionics18.github.io/aecsnwp/images/aecs_logol.png", alt="Atomic Energy Central School Narwapahar Logo", width="80")
-                        div
-                            h1.h4.text-uppercase.fw-bold.m-0 Atomic Energy Central School
-                            h1.h1.text-primary.text-uppercase.fw-bold.m-0 Narwapahar
-                .col-lg-6
-                    .hstack.justify-content-end.gap-3
-                        a.link-primary.ff-oswald.fw-bold(href="#") Staff
-                        .vr
-                        a.link-primary.ff-oswald.fw-bold(href="#") Alumni
-                        .vr
-                        a.link-primary.ff-oswald.fw-bold(href="#") Parents
-                        .vr
-                        a.btn.btn-primary(href="#") Admissions Online
+                .col-lg-2.text-start
+                        img.img-fluid(src=baseURL+"assets/images/aees-logo.png", alt="Atomic Energy Central School Narwapahar Logo", width="120")
+                .col-lg-8
+                        div.d-flex.flex-column.align-items-center.gap-2
+                            h5.fw-bold.m-0 परमाणु ऊर्जा केंद्रीय विद्यालय, नरवापहाड़ - ८३२१११
+                            h6.text-secondary.m-0 परमाणु ऊर्जा विभाग का स्वायत्त निकाय, भारत सरकार
+                            hr.w-25.m-0
+                            h1.h4.text-uppercase.fw-bold.m-0 Atomic Energy Central School, Narwapahar - 832111
+                            h6.text-secondary.fw-normal.m-0 An autonomus body under Department Of Atomic Energy, Govt. Of India | Affiliated to CBSE
+                .col-lg-2.text-end
+                    img.img-fluid(src=baseURL+"assets/images/50years-aees-logo.jpg", alt="Atomic Energy Central School Narwapahar Logo", width="100")
 
 //- Main Navbar
 nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme="dark")
@@ -41,11 +49,11 @@ nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme="dark")
                         | About Us
                     ul.dropdown-menu
                         li
-                            a.dropdown-item(href="#") Our History
+                            a.dropdown-item(href=baseURL+"about-us/our-history.html") Our History
                         li
-                            a.dropdown-item(href="#") Principal's Message
+                            a.dropdown-item(href=baseURL+"about-us/principal-message.html") Principal's Message
                         li
-                            a.dropdown-item(href="#") Our Mission &amp; Vision
+                            a.dropdown-item(href=baseURL+"about-us/our-mission-and-vision.html") Our Mission &amp; Vision
                 li.nav-item.dropdown
                     a.nav-link.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
                         | Academics
