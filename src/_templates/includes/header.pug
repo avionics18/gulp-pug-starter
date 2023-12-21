@@ -14,24 +14,24 @@ header
                             a.link-light.small.ff-oswald.text-decoration-none(href="#") Admission Online
     .header__banner.bg-white.py-3
         .container
-            .row.align-items-center
-                .col-lg-2.text-start
+            .row.align-items-center.gy-3
+                .col-lg-2.col-6.order-1.text-lg-start.text-end
                         img.img-fluid(src=baseURL+"assets/images/aees-logo.png", alt="Atomic Energy Central School Narwapahar Logo", width="120")
-                .col-lg-8
-                        div.d-flex.flex-column.align-items-center.gap-2
+                .col-lg-8.order-3.order-lg-2
+                        div.d-flex.flex-column.align-items-center.text-center.gap-2
                             h5.fw-bold.m-0 परमाणु ऊर्जा केंद्रीय विद्यालय, नरवापहाड़ - ८३२१११
                             h6.text-secondary.m-0 परमाणु ऊर्जा विभाग का स्वायत्त निकाय, भारत सरकार
                             hr.w-25.m-0
                             h1.h4.text-uppercase.fw-bold.m-0 Atomic Energy Central School, Narwapahar - 832111
-                            h6.text-secondary.fw-normal.m-0 An autonomus body under Department Of Atomic Energy, Govt. Of India | Affiliated to CBSE
-                .col-lg-2.text-end
+                            h6.text-secondary.fw-normal.m-0 An autonomus body under Department of Atomic Energy, Govt. of India | Affiliated to CBSE
+                .col-lg-2.col-6.order-2.order-lg-3.text-lg-end.text-start
                     img.img-fluid(src=baseURL+"assets/images/50years-aees-logo.jpg", alt="Atomic Energy Central School Narwapahar Logo", width="100")
 
 //- Main Navbar
 nav.navbar.navbar-expand-lg.bg-dark(data-bs-theme="dark")
     .container
-        span.navbar-brand.fw-bold.text-secondary.d-lg-none MENU
-        button.navbar-toggler(
+        span.navbar-brand.fw-bold.ff-oswald.text-secondary.d-lg-none MENU
+        button.navbar-toggler.py-2(
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarContent"
