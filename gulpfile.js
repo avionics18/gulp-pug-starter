@@ -8,7 +8,7 @@ const mode = require('gulp-mode')();
 
 // Build HTML
 function buildHTML() {
-    return src(["src/**/*.pug", "!src/templates/**/*.pug"])
+    return src(["src/**/*.pug", "!src/_templates/**/*.pug"])
         .pipe(pug({
             basedir: "./src",
             data: {
