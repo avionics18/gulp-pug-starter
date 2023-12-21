@@ -1,16 +1,14 @@
-- const baseURL = "//avionics18.github.io/gulp-pug-starter/"
-- const siteTitle = "AECS Narwapahar"
 block page__vars
 
 doctype html
 html(lang="en")
-    include includes/head.pug
+    include /templates/includes/head.pug
     body.bg-body-secondary    
-        include includes/header.pug
+        include /templates/includes/header.pug
         
         block content
         
-        include includes/footer.pug
+        include /templates/includes/footer.pug
         
         script(
             src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"

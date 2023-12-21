@@ -8,9 +8,14 @@ const mode = require('gulp-mode')();
 
 // Build HTML
 function buildHTML() {
-    const sourceFiles = ['./src/*.pug'];
-    return src(sourceFiles)
-        .pipe(pug())
+    return src(["src/**/*.pug", "!src/templates/**/*.pug"])
+        .pipe(pug({
+            basedir: "./src",
+            data: {
+                siteTitle: "AECS Narwapahar",
+                baseURL: mode.production() ? "//avionics18.github.io/gulp-pug-starter/" : "//localhost:3000/",
+            }
+        }))
         .pipe(dest('./docs'));
 }
 
